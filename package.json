@@ -1,0 +1,11 @@
+{
+  "name": "baseimage",
+  "version": "0.0.1",
+  "description": "baseimage",
+  "scripts": {
+    "build": "docker build -t baseimage ."
+  },
+  "keywords": [],
+  "author": "Max Malm <max@nextgenclassroom.se>",
+  "license": "MIT"
+}
