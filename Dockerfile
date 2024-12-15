@@ -10,6 +10,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     && rm -rf /var/lib/apt/lists/* \
     && npm install -g pnpm \
-    && pnpm add -g turbo@2.3.1 \
+    && pnpm add -g turbo@2.3.3 \
     && apt-get purge -y --auto-remove build-essential \
     && apt-get clean
