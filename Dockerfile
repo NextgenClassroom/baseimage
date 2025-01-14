@@ -1,4 +1,4 @@
-FROM node:20.14-bullseye-slim
+FROM node:22.13-bullseye-slim
 
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
