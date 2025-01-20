@@ -6,7 +6,6 @@ ENV PATH="$PNPM_HOME:$PATH"
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ffmpeg \
     build-essential \
-    libvips-dev \
     ca-certificates \
     && rm -rf /var/lib/apt/lists/* \
     && npm install -g pnpm \
