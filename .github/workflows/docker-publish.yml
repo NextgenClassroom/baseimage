@@ -28,9 +28,11 @@ jobs:
           docker build -t ghcr.io/${{ env.REPO_LOWERCASE }}:latest .
           docker build -f Dockerfile-alpine --target base -t ghcr.io/${{ env.REPO_LOWERCASE }}:alpine .
           docker build -f Dockerfile-alpine --target basewithtools -t ghcr.io/${{ env.REPO_LOWERCASE }}:alpinewithtool .
+          docker build -f Dockerfile-alpine --target baseffmpeg -t ghcr.io/${{ env.REPO_LOWERCASE }}:alpineffmpeg .
 
       - name: Push Docker images
         run: |
           docker push ghcr.io/${{ env.REPO_LOWERCASE }}:latest
           docker push ghcr.io/${{ env.REPO_LOWERCASE }}:alpine
           docker push ghcr.io/${{ env.REPO_LOWERCASE }}:alpinewithtool
+          docker push ghcr.io/${{ env.REPO_LOWERCASE }}:alpineffmpeg
